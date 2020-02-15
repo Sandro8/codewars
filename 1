@@ -1,0 +1,20 @@
+function likes( $names ) {
+  $likes[] = $names;
+  count($likes) = $i;
+  
+  if($i == 0) {
+    return "no one like this";
+  }
+  if($i == 1) {
+    return "$likes[0] like this";
+  }
+  if($i == 2) {
+    return "$likes[0] and $likes[1] like this";
+  }
+  if($i == 3) {
+    return "$likes[0], $likes[1] and $likes[2] like this";
+  }
+  if($i > 3) {
+    return "$likes[0], $likes[1] and $likes($i - 2) others like this";
+  }
+}
